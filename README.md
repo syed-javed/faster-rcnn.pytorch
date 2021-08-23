@@ -109,7 +109,7 @@ Thanks to [Remi](https://github.com/Cadene) for providing the pretrained detecti
 
 First of all, clone the code
 ```
-git clone https://github.com/jwyang/faster-rcnn.pytorch.git
+git clone https://github.com/syed-javed/faster-rcnn.pytorch.git
 ```
 
 Then, create a folder:
@@ -200,9 +200,11 @@ Above, BATCH_SIZE and WORKER_NUMBER can be set adaptively according to your GPU 
 If you have multiple (say 8) Titan Xp GPUs, then just use them all! Try:
 ```
 python trainval_net.py --dataset pascal_voc --net vgg16 \
-                       --bs 24 --nw 8 \
+                       --bs 16 --nw 8 \
                        --lr $LEARNING_RATE --lr_decay_step $DECAY_STEP \
                        --cuda --mGPUs
+
+If you get GPU memory error, change --bs to 8.
 
 ```
 
