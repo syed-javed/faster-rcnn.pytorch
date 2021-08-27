@@ -109,7 +109,7 @@ Thanks to [Remi](https://github.com/Cadene) for providing the pretrained detecti
 
 First of all, clone the code
 ```
-git clone https://github.com/syed-javed/faster-rcnn.pytorch.git
+git clone --branch Python3.6-Pytorch-0.4.0 --single-branch https://github.com/syed-javed/faster-rcnn.pytorch.git
 ```
 
 Then, create a folder:
